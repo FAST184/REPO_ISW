@@ -1,0 +1,130 @@
+// Objeto 1: Paciente
+element.CP_Class
+id=1
+pos=20;20;220;120
+bg=lightyellow
+title=paciente1 : Paciente
+attributes=
+curp = "GARM980512HDF..."
+nss = "12984567891"
+nombre = "Mateo García"
+telefono = "4441234567"
+direccion = "Av. Himalaya #450"
+
+// Objeto 2: Expediente / Registro
+element.CP_Class
+id=2
+pos=270;20;220;120
+bg=lightyellow
+title=expediente1 : RegistroPaciente
+attributes=
+idExpediente = "EXP-2026-89"
+tipoSangre = "O+"
+alergias = "Penicilina"
+fechaRegistro = "15/01/2026"
+
+// Objeto 3: Hospital Público
+element.CP_Class
+id=3
+pos=520;20;220;120
+bg=lightblue
+title=hospital1 : HospitalPublico
+attributes=
+nombre = "HGZ No. 50 IMSS"
+institucion = "IMSS"
+clues = "SLSSA001234"
+ciudad = "San Luis Potosí"
+
+// Objeto 4: Médico
+element.CP_Class
+id=4
+pos=770;20;220;120
+bg=lightblue
+title=medico1 : Medico
+attributes=
+nombre = "Dr. Roberto Silva"
+cedula = "8493021"
+especialidad = "Medicina General"
+
+// Objeto 5: Cita Médica
+element.CP_Class
+id=5
+pos=20;180;220;120
+bg=lightgreen
+title=cita1 : CitaMedica
+attributes=
+foliocita = "CIT-9902"
+fecha = "25/10/2026"
+hora = "10:30 AM"
+consultorio = "12"
+
+// Objeto 6: Receta Médica
+element.CP_Class
+id=6
+pos=270;180;220;120
+bg=lightgreen
+title=receta1 : RecetaMedica
+attributes=
+folioReceta = "REC-4410"
+diagnostico = "Infección leve"
+fechaEmision = "25/10/2026"
+
+// Objeto 7: Medicamento
+element.CP_Class
+id=7
+pos=520;180;220;120
+bg=pink
+title=med1 : Medicamento
+attributes=
+claveSustancia = "010.000.0104.00"
+nombre = "Paracetamol 500mg"
+precioVenta = 0.00
+cantidad = 2
+
+// Objeto 8: Entrega a Domicilio
+element.CP_Class
+id=8
+pos=770;180;220;120
+bg=pink
+title=envio1 : EntregaDomicilio
+attributes=
+idGuia = "DOM-88123"
+direccionEntrega = "Av. Himalaya #450"
+estatus = "En Camino"
+repartidor = "Pedro Juárez"
+
+// Enlaces (Conexiones entre objetos)
+element.CP_Relation
+id=9
+pos=240;70;30;10
+connect=1;2
+
+element.CP_Relation
+id=10
+pos=110;140;10;40
+connect=1;5
+
+element.CP_Relation
+id=11
+pos=630;140;10;40
+connect=3;4
+
+element.CP_Relation
+id=12
+pos=880;140;10;40
+connect=4;6
+
+element.CP_Relation
+id=13
+pos=240;230;30;10
+connect=5;6
+
+element.CP_Relation
+id=14
+pos=490;230;30;10
+connect=6;7
+
+element.CP_Relation
+id=15
+pos=740;230;30;10
+connect=7;8
